@@ -1,0 +1,158 @@
+/**
+ * Events, Announcements & Notifications Mock Data
+ */
+
+const mockEvents = [
+  {
+    id: 1,
+    title: 'Annual Inter-School Sports Meet 2026',
+    description: 'Track and field events, football, basketball, and relay races across all standards.',
+    start_date: '2026-11-20T09:00:00Z',
+    end_date: '2026-11-22T17:00:00Z',
+    location: 'Main Sports Complex & Ground',
+    event_type: 'Sports',
+    organizer: 'Physical Education Department',
+    is_active: true,
+    branch: 1,
+    created: '2026-11-01T10:00:00Z',
+  },
+  {
+    id: 2,
+    title: 'Science & Robotics Exhibition',
+    description: 'Student project showcases including AI models, IoT weather stations, and automation robots.',
+    start_date: '2026-11-25T10:00:00Z',
+    end_date: '2026-11-25T16:00:00Z',
+    location: 'Science & Tech Innovation Center',
+    event_type: 'Academic',
+    organizer: 'Science & AI Club',
+    is_active: true,
+    branch: 1,
+    created: '2026-11-05T11:00:00Z',
+  },
+  {
+    id: 3,
+    title: 'Term 2 Parent-Teacher Conference',
+    description: 'One-on-one progress discussions and report card reviews with class advisors.',
+    start_date: '2026-11-28T08:30:00Z',
+    end_date: '2026-11-28T14:00:00Z',
+    location: 'Respective Classrooms',
+    event_type: 'Conference',
+    organizer: 'School Administration',
+    is_active: true,
+    branch: 1,
+    created: '2026-11-08T09:00:00Z',
+  },
+  {
+    id: 4,
+    title: 'Winter Cultural Fest & Music Gala',
+    description: 'Choral performances, drama productions, classical and contemporary dance routines.',
+    start_date: '2026-12-15T16:00:00Z',
+    end_date: '2026-12-15T20:30:00Z',
+    location: 'Main Auditorium',
+    event_type: 'Cultural',
+    organizer: 'Arts & Cultural Society',
+    is_active: true,
+    branch: 1,
+    created: '2026-11-10T14:00:00Z',
+  },
+];
+
+const mockAnnouncements = [
+  {
+    id: 1,
+    title: 'Mid-Term Examination Schedule Released',
+    message: 'The official datesheet for Mid-Term Exams has been published in the Exam Timetable portal.',
+    category: 'Academic',
+    priority: 'High',
+    created: '2026-11-12T08:00:00Z',
+    modified: '2026-11-12T08:00:00Z',
+    is_active: true,
+    branch: 1,
+  },
+  {
+    id: 2,
+    title: 'Winter Uniform Mandatory from December 1st',
+    message: 'All students are required to wear blazers and winter cardigans as per the school handbook.',
+    category: 'Administrative',
+    priority: 'Medium',
+    created: '2026-11-10T10:00:00Z',
+    modified: '2026-11-10T10:00:00Z',
+    is_active: true,
+    branch: 1,
+  },
+  {
+    id: 3,
+    title: 'Campus Wi-Fi Maintenance Window',
+    message: 'Network services will undergo routine upgrades this Saturday between 10:00 PM and 02:00 AM.',
+    category: 'IT Support',
+    priority: 'Low',
+    created: '2026-11-08T15:00:00Z',
+    modified: '2026-11-08T15:00:00Z',
+    is_active: true,
+    branch: 1,
+  },
+];
+
+const mockNotifications = [
+  {
+    id: 1,
+    title: 'New Assignment Assigned',
+    message: 'Grade 10 Mathematics: Calculus Problem Set 4 has been assigned. Due in 5 days.',
+    notification_type: 'task',
+    is_read: false,
+    created: '2026-11-13T09:30:00Z',
+    link: '/tasks/task-list',
+  },
+  {
+    id: 2,
+    title: 'Leave Request Approved',
+    message: 'Your leave application for Nov 18th has been approved by Dr. Robert Chen.',
+    notification_type: 'leave',
+    is_read: false,
+    created: '2026-11-12T16:15:00Z',
+    link: '/leave/leave-requests',
+  },
+  {
+    id: 3,
+    title: 'Fee Payment Received',
+    message: 'Payment of ₹18,500 for Term 2 Tuition Fee was successfully processed.',
+    notification_type: 'finance',
+    is_read: true,
+    created: '2026-11-11T11:45:00Z',
+    link: '/finance/student-fee-details',
+  },
+  {
+    id: 4,
+    title: 'Sports Day Registration Open',
+    message: 'Register for 100m sprint, relay, and badminton competitions before Nov 18th.',
+    notification_type: 'event',
+    is_read: true,
+    created: '2026-11-10T14:20:00Z',
+    link: '/sports',
+  },
+  {
+    id: 5,
+    title: 'Attendance Alert',
+    message: 'Attendance was marked as Present for all periods today. Keep up the 95% record!',
+    notification_type: 'attendance',
+    is_read: true,
+    created: '2026-11-09T15:00:00Z',
+    link: '/attendance-dashboard',
+  },
+];
+
+const mockNotificationTypes = [
+  { id: 1, name: 'Task Updates', code: 'task' },
+  { id: 2, name: 'Leave Requests', code: 'leave' },
+  { id: 3, name: 'Finance & Fees', code: 'finance' },
+  { id: 4, name: 'Events & Calendar', code: 'event' },
+  { id: 5, name: 'Attendance & Alerts', code: 'attendance' },
+  { id: 6, name: 'General Announcements', code: 'announcement' },
+];
+
+module.exports = {
+  mockEvents,
+  mockAnnouncements,
+  mockNotifications,
+  mockNotificationTypes,
+};

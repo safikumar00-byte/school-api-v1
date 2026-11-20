@@ -1,0 +1,1639 @@
+[
+  {
+    "methodName": "validateEmail",
+    "method": "POST",
+    "path": "/api/organisations/validate-email/",
+    "expectedStatus": 200,
+    "body": {
+      "email": "admin@visionariesai.com"
+    }
+  },
+  {
+    "methodName": "loginUser",
+    "method": "POST",
+    "path": "/api/get-token/",
+    "expectedStatus": 200,
+    "body": {
+      "username": "admin",
+      "password": "password"
+    }
+  },
+  {
+    "methodName": "getAcademicYears",
+    "method": "GET",
+    "path": "/api/academic-years/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createAcademicYear",
+    "method": "POST",
+    "path": "/api/academic-years/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getAcademicYear",
+    "method": "GET",
+    "path": "/api/academic-years/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateAcademicYear",
+    "method": "PUT",
+    "path": "/api/academic-years/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteAcademicYear",
+    "method": "DELETE",
+    "path": "/api/academic-years/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getAnnouncements",
+    "method": "GET",
+    "path": "/api/announcements/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createAnnouncement",
+    "method": "POST",
+    "path": "/api/announcements/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getAnnouncement",
+    "method": "GET",
+    "path": "/api/announcements/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateAnnouncement",
+    "method": "PUT",
+    "path": "/api/announcements/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteAnnouncement",
+    "method": "DELETE",
+    "path": "/api/announcements/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getAttendance",
+    "method": "GET",
+    "path": "/api/attendance/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createAttendance",
+    "method": "POST",
+    "path": "/api/attendance/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getAttendanceReport",
+    "method": "GET",
+    "path": "/api/attendance/attendance-report-student/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getAttendanceDashboard",
+    "method": "GET",
+    "path": "/api/attendance-dashboard/dashboard/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getUserAttendanceDashboard",
+    "method": "GET",
+    "path": "/api/attendance-dashboard/1/user-dashboard/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getEvents",
+    "method": "GET",
+    "path": "/api/events/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createEvent",
+    "method": "POST",
+    "path": "/api/events/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getEvent",
+    "method": "GET",
+    "path": "/api/events/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateEvent",
+    "method": "PUT",
+    "path": "/api/events/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteEvent",
+    "method": "DELETE",
+    "path": "/api/events/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getBranches",
+    "method": "GET",
+    "path": "/api/branches/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createBranch",
+    "method": "POST",
+    "path": "/api/branches/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getBranch",
+    "method": "GET",
+    "path": "/api/branches/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDepartments",
+    "method": "GET",
+    "path": "/api/departments/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createDepartment",
+    "method": "POST",
+    "path": "/api/departments/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getDepartment",
+    "method": "GET",
+    "path": "/api/departments/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getChatMessages",
+    "method": "GET",
+    "path": "/api/chat/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "sendChatMessage",
+    "method": "POST",
+    "path": "/api/chat/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getAllReceivedChats",
+    "method": "GET",
+    "path": "/api/chat/all-received-chats/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getChatWith",
+    "method": "GET",
+    "path": "/api/chat/chat_with/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "markAsRead",
+    "method": "POST",
+    "path": "/api/chat/mark_as_read/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "isUserOnline",
+    "method": "GET",
+    "path": "/api/chat/is_user_online/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDocuments",
+    "method": "GET",
+    "path": "/api/documents/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createDocument",
+    "method": "POST",
+    "path": "/api/documents/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getDocument",
+    "method": "GET",
+    "path": "/api/documents/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getAmenities",
+    "method": "GET",
+    "path": "/api/amenities/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createAmenity",
+    "method": "POST",
+    "path": "/api/amenities/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getAmenitiesTypes",
+    "method": "GET",
+    "path": "/api/amenities-types/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getAnnualLeaveQuotas",
+    "method": "GET",
+    "path": "/api/annual-leave-quotas/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createAnnualLeaveQuota",
+    "method": "POST",
+    "path": "/api/annual-leave-quotas/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getBiometricData",
+    "method": "GET",
+    "path": "/api/biometric/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "uploadBiometricData",
+    "method": "POST",
+    "path": "/api/biometric/upload-biometric-data/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateBiometricData",
+    "method": "PATCH",
+    "path": "/api/biometric/update-biometric-data/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteBiometricData",
+    "method": "POST",
+    "path": "/api/biometric/delete-biometric-data/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getDevices",
+    "method": "GET",
+    "path": "/api/devices/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getAllDevices",
+    "method": "GET",
+    "path": "/api/devices/all-devices/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDeviceReadings",
+    "method": "GET",
+    "path": "/api/device-readings/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getLiveDeviceReadings",
+    "method": "GET",
+    "path": "/api/device-readings/live-device-readings/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getAllDeviceReadings",
+    "method": "GET",
+    "path": "/api/all-device-readings/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getEmsRooms",
+    "method": "GET",
+    "path": "/api/ems-rooms/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getRoomData",
+    "method": "GET",
+    "path": "/api/ems-rooms/get-room-data/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getEmsSchedules",
+    "method": "GET",
+    "path": "/api/ems-schedules/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createEmsSchedule",
+    "method": "POST",
+    "path": "/api/ems-schedules/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "controlNow",
+    "method": "POST",
+    "path": "/api/ems-schedules/control-now/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "bulkCreateAttendance",
+    "method": "POST",
+    "path": "/api/bulk-attendance/bulk-create/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getAvailablePeriods",
+    "method": "GET",
+    "path": "/api/availability/available-periods/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getAvailableTeachers",
+    "method": "GET",
+    "path": "/api/availability/available-teachers/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDesignations",
+    "method": "GET",
+    "path": "/api/designations/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createDesignation",
+    "method": "POST",
+    "path": "/api/designations/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getDeviceRegistry",
+    "method": "GET",
+    "path": "/api/device-registry/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDeviceThresholds",
+    "method": "GET",
+    "path": "/api/device-thresholds/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "checkAlerts",
+    "method": "GET",
+    "path": "/api/device-thresholds/check-alerts/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDomains",
+    "method": "GET",
+    "path": "/api/domains/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getAnswers",
+    "method": "GET",
+    "path": "/api/answers/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createAnswer",
+    "method": "POST",
+    "path": "/api/answers/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getUsers",
+    "method": "GET",
+    "path": "/api/users/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createUser",
+    "method": "POST",
+    "path": "/api/users/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getUser",
+    "method": "GET",
+    "path": "/api/users/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateUser",
+    "method": "PUT",
+    "path": "/api/users/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteUser",
+    "method": "DELETE",
+    "path": "/api/users/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getGroups",
+    "method": "GET",
+    "path": "/api/groups/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createGroup",
+    "method": "POST",
+    "path": "/api/groups/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getGroup",
+    "method": "GET",
+    "path": "/api/groups/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getPeriods",
+    "method": "GET",
+    "path": "/api/period/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getTeacherTimetable",
+    "method": "GET",
+    "path": "/api/period/teacher-timetable/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getAllUsers",
+    "method": "GET",
+    "path": "/api/users/get-all-users/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getFees",
+    "method": "GET",
+    "path": "/api/fees/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createFee",
+    "method": "POST",
+    "path": "/api/fees/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getFee",
+    "method": "GET",
+    "path": "/api/fees/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateFee",
+    "method": "PUT",
+    "path": "/api/fees/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteFee",
+    "method": "DELETE",
+    "path": "/api/fees/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getFeeTypes",
+    "method": "GET",
+    "path": "/api/fee-types/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createFeeType",
+    "method": "POST",
+    "path": "/api/fee-types/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getFeeType",
+    "method": "GET",
+    "path": "/api/fee-types/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateFeeType",
+    "method": "PATCH",
+    "path": "/api/fee-types/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteFeeType",
+    "method": "DELETE",
+    "path": "/api/fee-types/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getStandards",
+    "method": "GET",
+    "path": "/api/standards/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createStandard",
+    "method": "POST",
+    "path": "/api/standards/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getStandard",
+    "method": "GET",
+    "path": "/api/standards/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateStandard",
+    "method": "PUT",
+    "path": "/api/standards/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteStandard",
+    "method": "DELETE",
+    "path": "/api/standards/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "createPeriod",
+    "method": "POST",
+    "path": "/api/period/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updatePeriod",
+    "method": "PUT",
+    "path": "/api/period/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deletePeriod",
+    "method": "DELETE",
+    "path": "/api/period/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getTotalFeeSummary",
+    "method": "GET",
+    "path": "/api/total-fee-summary/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getFeeSummary",
+    "method": "GET",
+    "path": "/api/fee-summary/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getFeePayments",
+    "method": "GET",
+    "path": "/api/fee-payments/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getFeeDashboardAnalytics",
+    "method": "GET",
+    "path": "/api/fee-dashboard/fee-overview-analytics/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getStationaryTypes",
+    "method": "GET",
+    "path": "/api/stationary-types/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createStationaryType",
+    "method": "POST",
+    "path": "/api/stationary-types/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getStationaryType",
+    "method": "GET",
+    "path": "/api/stationary-types/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateStationaryType",
+    "method": "PATCH",
+    "path": "/api/stationary-types/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteStationaryType",
+    "method": "DELETE",
+    "path": "/api/stationary-types/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getStationary",
+    "method": "GET",
+    "path": "/api/stationary/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createStationary",
+    "method": "POST",
+    "path": "/api/stationary/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getInventoryTracking",
+    "method": "GET",
+    "path": "/api/inventory-tracking/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createInventoryTracking",
+    "method": "POST",
+    "path": "/api/inventory-tracking/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateInventoryTracking",
+    "method": "PATCH",
+    "path": "/api/inventory-tracking/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteInventoryTracking",
+    "method": "DELETE",
+    "path": "/api/inventory-tracking/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getStationaryFee",
+    "method": "GET",
+    "path": "/api/stationary-fee/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createStationaryFee",
+    "method": "POST",
+    "path": "/api/stationary-fee/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getStationaryFeeById",
+    "method": "GET",
+    "path": "/api/stationary-fee/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateStationaryFee",
+    "method": "PATCH",
+    "path": "/api/stationary-fee/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteStationaryFee",
+    "method": "DELETE",
+    "path": "/api/stationary-fee/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getStudentDetails",
+    "method": "GET",
+    "path": "/api/student-details/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateStudentDetails",
+    "method": "PATCH",
+    "path": "/api/student-details/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getSalaryTemplatesGrouped",
+    "method": "GET",
+    "path": "/api/salary-templates/grouped/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getSalaryCategories",
+    "method": "GET",
+    "path": "/api/salary-categories/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createSalaryTemplate",
+    "method": "POST",
+    "path": "/api/salary-templates/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateSalaryCategory",
+    "method": "PATCH",
+    "path": "/api/salary-categories/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "createSalaryCategory",
+    "method": "POST",
+    "path": "/api/salary-categories/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteSalaryCategory",
+    "method": "DELETE",
+    "path": "/api/salary-categories/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getAllUsersExceptStudents",
+    "method": "GET",
+    "path": "/api/users/get-all-users-expect-students/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getExpenditure",
+    "method": "GET",
+    "path": "/api/expenditure/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createExpenditure",
+    "method": "POST",
+    "path": "/api/expenditure/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateExpenditure",
+    "method": "PATCH",
+    "path": "/api/expenditure/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteExpenditure",
+    "method": "DELETE",
+    "path": "/api/expenditure/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getExpenditureSummary",
+    "method": "GET",
+    "path": "/api/expenditure/summary/branch-1/academic-year-1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getInventoryList",
+    "method": "GET",
+    "path": "/api/inventory/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createInventory",
+    "method": "POST",
+    "path": "/api/inventory/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateInventory",
+    "method": "PATCH",
+    "path": "/api/inventory/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteInventory",
+    "method": "DELETE",
+    "path": "/api/inventory/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getInventoryTypes",
+    "method": "GET",
+    "path": "/api/inventory-types/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createInventoryType",
+    "method": "POST",
+    "path": "/api/inventory-types/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getInventoryDashboard",
+    "method": "GET",
+    "path": "/api/inventory/dashboard/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getInventoryStatus",
+    "method": "GET",
+    "path": "/api/inventory/inventory-status/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getRooms",
+    "method": "GET",
+    "path": "/api/stationary-types/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getExamTimetable",
+    "method": "GET",
+    "path": "/api/exam-timetable/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getStudentMarksTable",
+    "method": "GET",
+    "path": "/api/student-exam-marks/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getStudentMarksAnalytics",
+    "method": "GET",
+    "path": "/api/student-marks/analytics/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getTasks",
+    "method": "GET",
+    "path": "/api/tasks_create/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createTask",
+    "method": "POST",
+    "path": "/api/tasks_create/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getTask",
+    "method": "GET",
+    "path": "/api/tasks_create/1/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "updateTask",
+    "method": "PATCH",
+    "path": "/api/tasks_create/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteTask",
+    "method": "DELETE",
+    "path": "/api/tasks_create/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getTaskSubmissions",
+    "method": "GET",
+    "path": "/api/task-submissions/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createTaskSubmission",
+    "method": "POST",
+    "path": "/api/task-submissions/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateTaskSubmission",
+    "method": "PATCH",
+    "path": "/api/task-submissions/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteTaskSubmission",
+    "method": "DELETE",
+    "path": "/api/task-submissions/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getLeaveRequests",
+    "method": "GET",
+    "path": "/api/leave/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createLeaveRequest",
+    "method": "POST",
+    "path": "/api/leave/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateLeaveRequest",
+    "method": "PATCH",
+    "path": "/api/leave/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteLeaveRequest",
+    "method": "DELETE",
+    "path": "/api/leave/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "approveLeaveRequest",
+    "method": "PATCH",
+    "path": "/api/leave/1/approve/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getLeaveQuotas",
+    "method": "GET",
+    "path": "/api/leave-quotas/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createLeaveQuota",
+    "method": "POST",
+    "path": "/api/leave-quotas/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateLeaveQuota",
+    "method": "PATCH",
+    "path": "/api/leave-quotas/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteLeaveQuota",
+    "method": "DELETE",
+    "path": "/api/leave-quotas/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getHolidays",
+    "method": "GET",
+    "path": "/api/holiday-calendar/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createHoliday",
+    "method": "POST",
+    "path": "/api/holiday-calendar/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateHoliday",
+    "method": "PATCH",
+    "path": "/api/holiday-calendar/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "deleteHoliday",
+    "method": "DELETE",
+    "path": "/api/holiday-calendar/1/",
+    "expectedStatus": 204,
+    "body": null
+  },
+  {
+    "methodName": "getHostelRooms",
+    "method": "GET",
+    "path": "/api/hostel-rooms/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getHostelBeds",
+    "method": "GET",
+    "path": "/api/hostel-beds/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "assignBed",
+    "method": "POST",
+    "path": "/api/hostel-beds/1/assign_student/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getHostelVisitors",
+    "method": "GET",
+    "path": "/api/hostel-visitors/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "checkOutVisitor",
+    "method": "POST",
+    "path": "/api/hostel-visitors/1/check_out/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getHostelMealPlans",
+    "method": "GET",
+    "path": "/api/hostel-mealplans/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createMealPlan",
+    "method": "POST",
+    "path": "/api/hostel-mealplans/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateMealPlan",
+    "method": "PATCH",
+    "path": "/api/hostel-mealplans/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getHostelProducts",
+    "method": "GET",
+    "path": "/api/hostel-products/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createHostelProduct",
+    "method": "POST",
+    "path": "/api/hostel-products/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateHostelProduct",
+    "method": "PATCH",
+    "path": "/api/hostel-products/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getSupportQueries",
+    "method": "GET",
+    "path": "/api/query/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createSupportQuery",
+    "method": "POST",
+    "path": "/api/query/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "updateSupportQuery",
+    "method": "PATCH",
+    "path": "/api/query/1/",
+    "expectedStatus": 200,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getNotifications",
+    "method": "GET",
+    "path": "/api/notifications/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getNotificationTypes",
+    "method": "GET",
+    "path": "/api/notification-types/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getSubjects",
+    "method": "GET",
+    "path": "/api/subjects/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getSections",
+    "method": "GET",
+    "path": "/api/sections/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getClasses",
+    "method": "GET",
+    "path": "/api/standards/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getVehicles",
+    "method": "GET",
+    "path": "/api/transport-vehicles/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createVehicle",
+    "method": "POST",
+    "path": "/api/transport-vehicles/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getTrips",
+    "method": "GET",
+    "path": "/api/transport-trips/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "createTrip",
+    "method": "POST",
+    "path": "/api/transport-trips/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getDrivers",
+    "method": "GET",
+    "path": "/api/transport-drivers/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDrivers",
+    "method": "GET",
+    "path": "/api/class-attendance/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDrivers",
+    "method": "POST",
+    "path": "/api/class-attendance/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  },
+  {
+    "methodName": "getDrivers",
+    "method": "GET",
+    "path": "/api/staff-attendance/",
+    "expectedStatus": 200,
+    "body": null
+  },
+  {
+    "methodName": "getDrivers",
+    "method": "POST",
+    "path": "/api/staff-attendance/",
+    "expectedStatus": 201,
+    "body": {
+      "name": "Test Record",
+      "title": "Test Record",
+      "is_active": true
+    }
+  }
+]
